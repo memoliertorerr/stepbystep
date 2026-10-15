@@ -1,0 +1,58 @@
+{
+  "name": "stepbystep",
+  "description": "Skills that turn a big request into a build plan later agent sessions execute one reviewable step at a time.",
+  "owner": {
+    "name": "Mehmet Ali Ertorer",
+    "url": "https://github.com/memoliertorerr"
+  },
+  "plugins": [
+    {
+      "name": "stepbystep",
+      "description": "The default edition. Full build plan with tracker, per-step prompts, verify lines, rollback, landmines, and a not-building list. The agent never commits: it hands you one commit + push block per step.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/stepbystep"],
+      "category": "productivity",
+      "keywords": ["planning", "build-plan", "agentic-coding", "workflow"],
+      "license": "MIT",
+      "homepage": "https://github.com/memoliertorerr/stepbystep",
+      "repository": "https://github.com/memoliertorerr/stepbystep"
+    },
+    {
+      "name": "stepbystep-portable",
+      "description": "Tool-neutral edition. Same full format with generic model tiers and a commit convention you choose per plan (human commits, agent commits, or agent commits and pushes).",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/stepbystep-portable"],
+      "category": "productivity",
+      "keywords": ["planning", "build-plan", "agentic-coding", "workflow"],
+      "license": "MIT",
+      "homepage": "https://github.com/memoliertorerr/stepbystep",
+      "repository": "https://github.com/memoliertorerr/stepbystep"
+    },
+    {
+      "name": "stepbystep-lite",
+      "description": "Lightweight edition for 3-8 step features and fixes. One compact plan file: scope, tracker, opening prompt, and per-step prompts with verify lines. Small and cheap to load.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/stepbystep-lite"],
+      "category": "productivity",
+      "keywords": ["planning", "build-plan", "agentic-coding", "workflow"],
+      "license": "MIT",
+      "homepage": "https://github.com/memoliertorerr/stepbystep",
+      "repository": "https://github.com/memoliertorerr/stepbystep"
+    },
+    {
+      "name": "stepbystep-autopilot",
+      "description": "Autonomous edition. The agent commits each green step, runs a whole phase, and opens a pull request per phase, stopping at human checkpoints and explicit stop conditions.",
+      "source": "./",
+      "strict": false,
+      "skills": ["./skills/stepbystep-autopilot"],
+      "category": "productivity",
+      "keywords": ["planning", "build-plan", "agentic-coding", "workflow", "autonomous"],
+      "license": "MIT",
+      "homepage": "https://github.com/memoliertorerr/stepbystep",
+      "repository": "https://github.com/memoliertorerr/stepbystep"
+    }
+  ]
+}

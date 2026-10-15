@@ -1,0 +1,9 @@
+.DS_Store
+original/
+
+# Local agent instructions and settings (not published)
+AGENTS.md
+AGENT.md
+CLAUDE.md
+CLAUDE.local.md
+.claude/
